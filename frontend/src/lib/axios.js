@@ -1,6 +1,9 @@
-import axios from "axios";
+import axios from "axios"
+import dotenv from "dotenv"
+
+const BaseUrl = import.meta.env.BACKEND_URL
 
 export const axiosInstanace = axios.create({
-    baseURL: `${BACKEND_URL}/api`,
+    baseURL: `${BaseUrl}/api`,
     withCredentials: true,
 })
