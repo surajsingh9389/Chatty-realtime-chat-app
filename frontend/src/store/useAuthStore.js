@@ -4,7 +4,7 @@ import toast from "react-hot-toast";
 import { io } from "socket.io-client";
 
 
-const SOCKET_URL = import.meta.env.BACKEND_URL
+const SOCKET_URL = import.meta.env.VITE_BACKEND_URL;
 
 export const useAuthStore = create((set, get) => ({
   authUser: null,
@@ -96,6 +96,8 @@ export const useAuthStore = create((set, get) => ({
     socket.on("getOnlineUsers", (userIds) => {
       set({ onlineUsers: userIds });
     });
+
+    console.log("SOCKET_URL is", SOCKET_URL);
 
     socket.on("connect_error", (err) => {
     console.error("Socket connection error:", err.message);
