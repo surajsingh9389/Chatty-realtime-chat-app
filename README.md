@@ -20,7 +20,7 @@
 ### Frontend
 - **React.js** (Vite)
 - **Zustand** for global state management
-- **Tailwind CSS** for styling
+- **Tailwind CSS** with **daisyUI** components for responsive, themeable UI.
 - **Axios** for API calls
 - **Socket.IO Client** for real-time communication
 
