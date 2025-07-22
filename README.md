@@ -28,6 +28,7 @@
 - **Node.js** & **Express.js**
 - **MongoDB** with **Mongoose**
 - **JWT** for secure authentication
+- **Cloudinary** for image storage
 - **Socket.IO Server** for WebSocket handling
 - **CORS** & **dotenv** for environment config
 
