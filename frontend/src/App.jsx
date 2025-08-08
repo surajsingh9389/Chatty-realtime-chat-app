@@ -21,7 +21,7 @@ const App = () => {
   }, [checkAuth]);
 
   // Show loading only for protected routes when auth is being checked
-  const showLoading = isCheckingAuth && window.location.pathname !== '/';
+  const showLoading = !authUser && isCheckingAuth && window.location.pathname !== '/';
 
   if (showLoading) {
     return (
