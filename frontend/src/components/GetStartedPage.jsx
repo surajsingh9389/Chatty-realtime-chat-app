@@ -21,7 +21,7 @@ const GetStartedPage = () => {
 
   const handleGetStarted = () =>{
    navigate('/chat')
-   toast("Please wait backend is Initializing...")
+//    toast("Please wait backend is Initializing...")
   }
 
   // Generate random HSL color based on theme
